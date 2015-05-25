@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Examples</category>
+  <title>CLIFlipImage</title>
+  <description><![CDATA[This is a CLI module that can be bundled in an extension]]></description>
+  <version>0.0.1</version>
+  <documentation-url>http://www.slicer.org/slicerWiki/index.php/Documentation/4.3/Modules/CLIFlipImage</documentation-url>
+  <license>Slicer</license>
+  <contributor>Pietro Nardelli (UCC)</contributor>
+  <acknowledgements>This work was partially funded by NIH grant NXNNXXNNNNNN-NNXN</acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description><![CDATA[Input/output parameters]]></description>    
+    <image>
+      <name>inputVolume</name>
+      <label>Input Volume</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[Input volume]]></description>
+    </image>
+    <image>
+      <name>outputVolume</name>
+      <label>Output Volume</label>
+      <channel>output</channel>
+      <index>1</index>
+      <description><![CDATA[Output Volume]]></description>
+    </image>
+  </parameters>
+  <parameters>
+    <label>Axes</label>
+    <description><![CDATA[Input/output parameters]]></description>    
+    <boolean>    
+      <name>XAxes</name>
+      <longflag>--x</longflag>
+      <description><![CDATA[Turn around X axes]]></description>
+      <label>X Axes Flipping</label>
+      <default>0</default>
+    </boolean>
+    <boolean>    
+      <name>YAxes</name>
+      <longflag>--y</longflag>
+      <description><![CDATA[Turn around Y axes]]></description>
+      <label>Y Axes Flipping</label>
+      <default>0</default>
+    </boolean>
+    <boolean>    
+      <name>ZAxes</name>
+      <longflag>--z</longflag>
+      <description><![CDATA[Turn around Z axes]]></description>
+      <label>Z axes Flipping</label>
+      <default>0</default>
+    </boolean>
+  </parameters>
+</executable>
